@@ -21,8 +21,8 @@ iOS 10.0 introduce new `UserNotification` framework to handle both remote and lo
 
 iOS 12.0 apple introduce new authorization option `provisional`, `providesAppNotificationSettings` and `criticalAlert`
 
-`provisional`: The ability to post noninterrupting notifications provisionally to the Notification Center.
-`providesAppNotificationSettings`: An option indicating the system should display a button for in-app notification settings.
+`provisional`: The ability to post noninterrupting notifications provisionally to the Notification Center.<br>
+`providesAppNotificationSettings`: An option indicating the system should display a button for in-app notification settings.<br>
 `criticalAlert`: The ability to play sounds for critical alerts.
 
 
