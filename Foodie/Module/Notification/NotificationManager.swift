@@ -1,0 +1,79 @@
+//
+//  NotificationManager.swift
+//  Foodie
+//
+//  Created by Anbalagan on 14/03/24.
+//
+
+import Foundation
+import UserNotifications
+
+final class NotificationManager: NSObject {
+    static let shared = NotificationManager()
+
+    private let userNotificationCenter = UNUserNotificationCenter.current()
+
+    private override init() {
+        super.init()
+        initialSetup()
+    }
+
+    private func initialSetup() {
+        userNotificationCenter.delegate = self
+    }
+
+    func requestAuthorization(_ completion: @escaping (Result<Bool, any Error>) -> Void) {
+        var authorizationOption: UNAuthorizationOptions = [
+            .alert,
+            .sound,
+            .badge,
+            .provisional,
+            .criticalAlert,
+            .providesAppNotificationSettings
+        ]
+
+        if #available(iOS 13.0, *) {
+            authorizationOption.insert(.announcement)
+        }
+
+        userNotificationCenter.requestAuthorization(options: authorizationOption) { isAuthorized, error in
+            let result: Result<Bool, Error> = if let error {
+                .failure(error)
+            } else {
+                .success(isAuthorized)
+            }
+
+            completion(result)
+        }
+    }
+
+    func getNotificationSettings(_ completion: @escaping (UNNotificationSettings) -> Void) {
+        userNotificationCenter.getNotificationSettings(completionHandler: completion)
+    }
+}
+
+extension NotificationManager: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        willPresent notification: UNNotification,
+        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
+    ) {
+        completionHandler([.alert, .sound])
+    }
+
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        didReceive response: UNNotificationResponse,
+        withCompletionHandler completionHandler: @escaping () -> Void
+    ) {
+        completionHandler()
+    }
+
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        openSettingsFor notification: UNNotification?
+    ) {
+        // TODO: show notification setting screen if have any screen dedicated for notification
+        print(#function)
+    }
+}
