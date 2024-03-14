@@ -45,7 +45,7 @@ Note: Except `UNPushNotificationTrigger` we can use all other trigger to schedul
 
 ### Attachment and Sound
 
-From iOS 10.0 `User Notification` framework support to customize notification sound and notification can show attachments.
+From iOS 10.0 `UserNotification` framework support to customize notification sound and notification can show attachments.
 
 __Limitation:__ 
 * Its support multiple notification but show first attachment only in notification alert.
@@ -60,7 +60,7 @@ __Limitation:__
 ### Service extension
 
 Service extension give the opportunity to modify notification content before delivery to user. We can use this opportunity to modify notification content.
-Remote notification payload we must include `mutable-content: 1` within aps object. otherwise service extension not work.
+Remote notification payload we must include `mutable-content: 1` within apns object otherwise service extension not work.
 
 
 ###  Content extension
