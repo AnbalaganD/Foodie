@@ -2,7 +2,7 @@
 
 ## Overview
 
-From iOS 10.0 apple provide UserNotifications frame to handling local and remote notification. 
+From iOS 10.0 apple provide UserNotifications framework to handling local and remote notification. 
 
 ## Feature
 
@@ -17,7 +17,7 @@ From iOS 10.0 apple provide UserNotifications frame to handling local and remote
 
 ### Permission
 
-iOS 10.0 introduce new `User Notification` framework to handle both remote and local notification. And support badge, sound, alert type authorization as well.
+iOS 10.0 introduce new `UserNotification` framework to handle both remote and local notification. And support badge, sound, alert type authorization as well.
 
 iOS 12.0 apple introduce new authorization option `provisional`, `providesAppNotificationSettings` and `criticalAlert`
 
@@ -54,7 +54,7 @@ __Limitation:__
 
 ### Category and Action
 
-`User Notification` support notification category. We must register our category objects using the `setNotificationCategories(_:)` method of `UNUserNotificationCenter`. Each notification category have associated action. Based on category system will show the appropriate action
+`UserNotification` support notification category. We must register our category objects using the `setNotificationCategories(_:)` method of `UNUserNotificationCenter`. Each notification category have associated action. Based on category system will show the appropriate action
 
 
 ### Service extension
