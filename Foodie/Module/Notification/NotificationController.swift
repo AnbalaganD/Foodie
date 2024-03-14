@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NotificationController.swift
 //  Foodie
 //
 //  Created by Anbalagan D on 25/08/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NotificationController: UIViewController {
     
     @IBOutlet weak var generateNotificationButton: UIButton!
     // Localized String in Notification
@@ -177,7 +177,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UNUserNotificationCenterDelegate {
+extension NotificationController: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler([.alert, .sound])
     }
@@ -190,5 +190,3 @@ extension ViewController: UNUserNotificationCenterDelegate {
         print(#function)
     }
 }
-
-
