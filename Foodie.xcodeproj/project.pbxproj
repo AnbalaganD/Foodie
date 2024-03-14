@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5456B22826D7D4380097DBC9 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 5456B22726D7D4380097DBC9 /* Readme.md */; };
 		54F9445326D7660F00C4972C /* food.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 54F9445226D7660F00C4972C /* food.jpeg */; };
 		54F9445526D767C900C4972C /* salt_lemon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 54F9445426D767C900C4972C /* salt_lemon.jpeg */; };
 		54F9445726D789DD00C4972C /* cucko.wav in Resources */ = {isa = PBXBuildFile; fileRef = 54F9445626D789DD00C4972C /* cucko.wav */; };
@@ -39,14 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		540B3A9826DCE64300E562DA /* Embed App Extensions */ = {
+		540B3A9826DCE64300E562DA /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -55,7 +54,6 @@
 		540B3A8A26DCE64300E562DA /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		540B3A8C26DCE64300E562DA /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		543FF49B26EF7EE000602D0E /* FoodieDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FoodieDebug.entitlements; sourceTree = "<group>"; };
-		5456B22726D7D4380097DBC9 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		54F9445226D7660F00C4972C /* food.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food.jpeg; sourceTree = "<group>"; };
 		54F9445426D767C900C4972C /* salt_lemon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salt_lemon.jpeg; sourceTree = "<group>"; };
 		54F9445626D789DD00C4972C /* cucko.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cucko.wav; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 				54FB739E26D68ADF007D0FC7 /* Assets.xcassets */,
 				54FB73A026D68ADF007D0FC7 /* LaunchScreen.storyboard */,
 				54FB73A326D68ADF007D0FC7 /* Info.plist */,
-				5456B22726D7D4380097DBC9 /* Readme.md */,
 			);
 			path = Foodie;
 			sourceTree = "<group>";
@@ -177,7 +174,7 @@
 				54FB738E26D68ADD007D0FC7 /* Sources */,
 				54FB738F26D68ADD007D0FC7 /* Frameworks */,
 				54FB739026D68ADD007D0FC7 /* Resources */,
-				540B3A9826DCE64300E562DA /* Embed App Extensions */,
+				540B3A9826DCE64300E562DA /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -230,8 +227,9 @@
 		54FB738A26D68ADD007D0FC7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					54FB739126D68ADD007D0FC7 = {
 						CreatedOnToolsVersion = 12.5;
@@ -271,7 +269,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5456B22826D7D4380097DBC9 /* Readme.md in Resources */,
 				54F9445726D789DD00C4972C /* cucko.wav in Resources */,
 				54F9445526D767C900C4972C /* salt_lemon.jpeg in Resources */,
 				54FB73A226D68ADF007D0FC7 /* LaunchScreen.storyboard in Resources */,
@@ -363,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -396,6 +394,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -410,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -457,6 +457,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -465,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -485,7 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9Y62JV6M7;
 				INFOPLIST_FILE = Foodie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,7 +507,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9Y62JV6M7;
 				INFOPLIST_FILE = Foodie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
