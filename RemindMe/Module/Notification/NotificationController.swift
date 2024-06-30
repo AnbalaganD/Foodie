@@ -9,7 +9,7 @@ import UIKit
 import UserNotifications
 
 final class NotificationController: UIViewController {
-    @IBOutlet weak var generateNotificationButton: UIButton!
+    private var generateNotificationButton: UIButton!
     // Localized String in Notification
     // class func localizedUserNotificationString(forKey key: String, arguments: [Any]?) -> String
     
@@ -17,10 +17,8 @@ final class NotificationController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        generateNotificationButton.layer.borderWidth = 1.0
-        generateNotificationButton.layer.borderColor = UIColor.red.cgColor
-
+        
+        setupView()
         setNotificationCategory()
 
 //        UNUserNotificationCenter.current().removeDeliveredNotifications(withIdentifiers: ["test"])
@@ -58,8 +56,24 @@ final class NotificationController: UIViewController {
             }
         }
     }
+    
+    private func setupView() {
+        view.backgroundColor = .white
+        
+        generateNotificationButton = UIButton(frame: .zero)
+        generateNotificationButton.translatesAutoresizingMaskIntoConstraints = false
+        generateNotificationButton.setTitle("   Generate Notification   ", for: .normal)
+        generateNotificationButton.setTitleColor(.blue, for: .normal)
+        generateNotificationButton.layer.borderWidth = 1.0
+        generateNotificationButton.layer.borderColor = UIColor.red.cgColor
+        generateNotificationButton.addTarget(self, action: #selector(generateNotificationTapped), for: .touchUpInside)
+        view.addSubview(generateNotificationButton)
+        
+        generateNotificationButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        generateNotificationButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
 
-    @IBAction private func generateNotificationTapped() {
+    @objc private func generateNotificationTapped() {
 //        UNUserNotificationCenter.current().getNotificationSettings { notificationSettings in
 //            print(notificationSettings)
 //        }

@@ -46,6 +46,12 @@ final class NotificationManager: NSObject, @unchecked Sendable {
     func getNotificationSettings(_ completion: @escaping (UNNotificationSettings) -> Void) {
         userNotificationCenter.getNotificationSettings(completionHandler: completion)
     }
+    
+    func getScheduleNotificationList() {
+        userNotificationCenter.getPendingNotificationRequests { notificationRequest in
+            print(notificationRequest)
+        }
+    }
 }
 
 extension NotificationManager: UNUserNotificationCenterDelegate {
