@@ -137,13 +137,13 @@
 		54FB739426D68ADD007D0FC7 /* RemindMe */ = {
 			isa = PBXGroup;
 			children = (
+				99BC3E742C31D83400D1D9E4 /* Components */,
 				998129FF2BA309E800938B85 /* Module */,
 				998129FE2BA3099000938B85 /* Support */,
 				998129FD2BA3098000938B85 /* Storyboard */,
 				998129FC2BA3096A00938B85 /* Resources */,
 				998129FB2BA3094100938B85 /* Raw */,
 				543FF49B26EF7EE000602D0E /* RemindMe.entitlements */,
-				54FB73A326D68ADF007D0FC7 /* Info.plist */,
 			);
 			path = RemindMe;
 			sourceTree = "<group>";
@@ -196,6 +196,7 @@
 		998129FE2BA3099000938B85 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				54FB73A326D68ADF007D0FC7 /* Info.plist */,
 				54FB739526D68ADD007D0FC7 /* AppDelegate.swift */,
 				54FB739726D68ADD007D0FC7 /* SceneDelegate.swift */,
 			);
@@ -219,6 +220,13 @@
 				99BC3E702C31C20B00D1D9E4 /* NotificationCell.swift */,
 			);
 			path = Notification;
+			sourceTree = "<group>";
+		};
+		99BC3E742C31D83400D1D9E4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,7 +546,7 @@
 				CODE_SIGN_ENTITLEMENTS = RemindMe/RemindMe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9Y62JV6M7;
-				INFOPLIST_FILE = RemindMe/Info.plist;
+				INFOPLIST_FILE = RemindMe/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -563,7 +571,7 @@
 				CODE_SIGN_ENTITLEMENTS = RemindMe/RemindMe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9Y62JV6M7;
-				INFOPLIST_FILE = RemindMe/Info.plist;
+				INFOPLIST_FILE = RemindMe/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
