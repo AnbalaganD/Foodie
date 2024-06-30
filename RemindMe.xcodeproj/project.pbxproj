@@ -16,8 +16,8 @@
 		54FB739D26D68ADD007D0FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FB739B26D68ADD007D0FC7 /* Main.storyboard */; };
 		54FB739F26D68ADF007D0FC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54FB739E26D68ADF007D0FC7 /* Assets.xcassets */; };
 		54FB73A226D68ADF007D0FC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FB73A026D68ADF007D0FC7 /* LaunchScreen.storyboard */; };
-		54FB73AD26D68AE0007D0FC7 /* FoodieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB73AC26D68AE0007D0FC7 /* FoodieTests.swift */; };
-		54FB73B826D68AE0007D0FC7 /* FoodieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB73B726D68AE0007D0FC7 /* FoodieUITests.swift */; };
+		54FB73AD26D68AE0007D0FC7 /* RemindMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB73AC26D68AE0007D0FC7 /* RemindMeTests.swift */; };
+		54FB73B826D68AE0007D0FC7 /* RemindMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB73B726D68AE0007D0FC7 /* RemindMeUITests.swift */; };
 		99812A022BA3121C00938B85 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99812A012BA3121C00938B85 /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,11 +54,11 @@
 /* Begin PBXFileReference section */
 		540B3A8A26DCE64300E562DA /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		540B3A8C26DCE64300E562DA /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
-		543FF49B26EF7EE000602D0E /* Foodie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Foodie.entitlements; sourceTree = "<group>"; };
+		543FF49B26EF7EE000602D0E /* RemindMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemindMe.entitlements; sourceTree = "<group>"; };
 		54F9445226D7660F00C4972C /* food.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food.jpeg; sourceTree = "<group>"; };
 		54F9445426D767C900C4972C /* salt_lemon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salt_lemon.jpeg; sourceTree = "<group>"; };
 		54F9445626D789DD00C4972C /* cucko.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cucko.wav; sourceTree = "<group>"; };
-		54FB739226D68ADD007D0FC7 /* Foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54FB739226D68ADD007D0FC7 /* RemindMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FB739526D68ADD007D0FC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FB739726D68ADD007D0FC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		54FB739926D68ADD007D0FC7 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -67,10 +67,10 @@
 		54FB73A126D68ADF007D0FC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54FB73A326D68ADF007D0FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54FB73A826D68AE0007D0FC7 /* FoodieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		54FB73AC26D68AE0007D0FC7 /* FoodieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieTests.swift; sourceTree = "<group>"; };
+		54FB73AC26D68AE0007D0FC7 /* RemindMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMeTests.swift; sourceTree = "<group>"; };
 		54FB73AE26D68AE0007D0FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54FB73B326D68AE0007D0FC7 /* FoodieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		54FB73B726D68AE0007D0FC7 /* FoodieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieUITests.swift; sourceTree = "<group>"; };
+		54FB73B726D68AE0007D0FC7 /* RemindMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMeUITests.swift; sourceTree = "<group>"; };
 		54FB73B926D68AE0007D0FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99812A012BA3121C00938B85 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,9 +112,9 @@
 		54FB738926D68ADD007D0FC7 = {
 			isa = PBXGroup;
 			children = (
-				54FB739426D68ADD007D0FC7 /* Foodie */,
-				54FB73AB26D68AE0007D0FC7 /* FoodieTests */,
-				54FB73B626D68AE0007D0FC7 /* FoodieUITests */,
+				54FB739426D68ADD007D0FC7 /* RemindMe */,
+				54FB73AB26D68AE0007D0FC7 /* RemindMeTests */,
+				54FB73B626D68AE0007D0FC7 /* RemindMeUITests */,
 				540B3A8926DCE64300E562DA /* Frameworks */,
 				54FB739326D68ADD007D0FC7 /* Products */,
 			);
@@ -123,14 +123,14 @@
 		54FB739326D68ADD007D0FC7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				54FB739226D68ADD007D0FC7 /* Foodie.app */,
+				54FB739226D68ADD007D0FC7 /* RemindMe.app */,
 				54FB73A826D68AE0007D0FC7 /* FoodieTests.xctest */,
 				54FB73B326D68AE0007D0FC7 /* FoodieUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		54FB739426D68ADD007D0FC7 /* Foodie */ = {
+		54FB739426D68ADD007D0FC7 /* RemindMe */ = {
 			isa = PBXGroup;
 			children = (
 				998129FF2BA309E800938B85 /* Module */,
@@ -138,28 +138,28 @@
 				998129FD2BA3098000938B85 /* Storyboard */,
 				998129FC2BA3096A00938B85 /* Resources */,
 				998129FB2BA3094100938B85 /* Raw */,
-				543FF49B26EF7EE000602D0E /* Foodie.entitlements */,
+				543FF49B26EF7EE000602D0E /* RemindMe.entitlements */,
 				54FB73A326D68ADF007D0FC7 /* Info.plist */,
 			);
-			path = Foodie;
+			path = RemindMe;
 			sourceTree = "<group>";
 		};
-		54FB73AB26D68AE0007D0FC7 /* FoodieTests */ = {
+		54FB73AB26D68AE0007D0FC7 /* RemindMeTests */ = {
 			isa = PBXGroup;
 			children = (
-				54FB73AC26D68AE0007D0FC7 /* FoodieTests.swift */,
+				54FB73AC26D68AE0007D0FC7 /* RemindMeTests.swift */,
 				54FB73AE26D68AE0007D0FC7 /* Info.plist */,
 			);
-			path = FoodieTests;
+			path = RemindMeTests;
 			sourceTree = "<group>";
 		};
-		54FB73B626D68AE0007D0FC7 /* FoodieUITests */ = {
+		54FB73B626D68AE0007D0FC7 /* RemindMeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				54FB73B726D68AE0007D0FC7 /* FoodieUITests.swift */,
+				54FB73B726D68AE0007D0FC7 /* RemindMeUITests.swift */,
 				54FB73B926D68AE0007D0FC7 /* Info.plist */,
 			);
-			path = FoodieUITests;
+			path = RemindMeUITests;
 			sourceTree = "<group>";
 		};
 		998129FB2BA3094100938B85 /* Raw */ = {
@@ -218,9 +218,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		54FB739126D68ADD007D0FC7 /* Foodie */ = {
+		54FB739126D68ADD007D0FC7 /* RemindMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 54FB73BC26D68AE0007D0FC7 /* Build configuration list for PBXNativeTarget "Foodie" */;
+			buildConfigurationList = 54FB73BC26D68AE0007D0FC7 /* Build configuration list for PBXNativeTarget "RemindMe" */;
 			buildPhases = (
 				54FB738E26D68ADD007D0FC7 /* Sources */,
 				54FB738F26D68ADD007D0FC7 /* Frameworks */,
@@ -231,9 +231,9 @@
 			);
 			dependencies = (
 			);
-			name = Foodie;
+			name = RemindMe;
 			productName = Foodie;
-			productReference = 54FB739226D68ADD007D0FC7 /* Foodie.app */;
+			productReference = 54FB739226D68ADD007D0FC7 /* RemindMe.app */;
 			productType = "com.apple.product-type.application";
 		};
 		54FB73A726D68ADF007D0FC7 /* FoodieTests */ = {
@@ -295,7 +295,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 54FB738D26D68ADD007D0FC7 /* Build configuration list for PBXProject "Foodie" */;
+			buildConfigurationList = 54FB738D26D68ADD007D0FC7 /* Build configuration list for PBXProject "RemindMe" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -308,7 +308,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				54FB739126D68ADD007D0FC7 /* Foodie */,
+				54FB739126D68ADD007D0FC7 /* RemindMe */,
 				54FB73A726D68ADF007D0FC7 /* FoodieTests */,
 				54FB73B226D68AE0007D0FC7 /* FoodieUITests */,
 			);
@@ -361,7 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54FB73AD26D68AE0007D0FC7 /* FoodieTests.swift in Sources */,
+				54FB73AD26D68AE0007D0FC7 /* RemindMeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54FB73B826D68AE0007D0FC7 /* FoodieUITests.swift in Sources */,
+				54FB73B826D68AE0007D0FC7 /* RemindMeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,12 +378,12 @@
 /* Begin PBXTargetDependency section */
 		54FB73AA26D68AE0007D0FC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 54FB739126D68ADD007D0FC7 /* Foodie */;
+			target = 54FB739126D68ADD007D0FC7 /* RemindMe */;
 			targetProxy = 54FB73A926D68AE0007D0FC7 /* PBXContainerItemProxy */;
 		};
 		54FB73B526D68AE0007D0FC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 54FB739126D68ADD007D0FC7 /* Foodie */;
+			target = 54FB739126D68ADD007D0FC7 /* RemindMe */;
 			targetProxy = 54FB73B426D68AE0007D0FC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -535,16 +535,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Foodie/Foodie.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RemindMe/RemindMe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9Y62JV6M7;
-				INFOPLIST_FILE = Foodie/Info.plist;
+				INFOPLIST_FILE = RemindMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.anbu.Foodie;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anbu.RemindMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -560,16 +560,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Foodie/Foodie.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RemindMe/RemindMe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9Y62JV6M7;
-				INFOPLIST_FILE = Foodie/Info.plist;
+				INFOPLIST_FILE = RemindMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.anbu.Foodie;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anbu.RemindMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -677,7 +677,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		54FB738D26D68ADD007D0FC7 /* Build configuration list for PBXProject "Foodie" */ = {
+		54FB738D26D68ADD007D0FC7 /* Build configuration list for PBXProject "RemindMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				54FB73BA26D68AE0007D0FC7 /* Debug */,
@@ -686,7 +686,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		54FB73BC26D68AE0007D0FC7 /* Build configuration list for PBXNativeTarget "Foodie" */ = {
+		54FB73BC26D68AE0007D0FC7 /* Build configuration list for PBXNativeTarget "RemindMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				54FB73BD26D68AE0007D0FC7 /* Debug */,

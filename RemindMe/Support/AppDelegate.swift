@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Foodie
+//  RemindMe
 //
 //  Created by Anbalagan D on 25/08/21.
 //

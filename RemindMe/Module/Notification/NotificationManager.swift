@@ -1,6 +1,6 @@
 //
 //  NotificationManager.swift
-//  Foodie
+//  RemindMe
 //
 //  Created by Anbalagan on 14/03/24.
 //
