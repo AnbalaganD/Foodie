@@ -12,7 +12,7 @@
 		54F9445726D789DD00C4972C /* cucko.wav in Resources */ = {isa = PBXBuildFile; fileRef = 54F9445626D789DD00C4972C /* cucko.wav */; };
 		54FB739626D68ADD007D0FC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB739526D68ADD007D0FC7 /* AppDelegate.swift */; };
 		54FB739826D68ADD007D0FC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB739726D68ADD007D0FC7 /* SceneDelegate.swift */; };
-		54FB739A26D68ADD007D0FC7 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB739926D68ADD007D0FC7 /* NotificationController.swift */; };
+		54FB739A26D68ADD007D0FC7 /* NotificationDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB739926D68ADD007D0FC7 /* NotificationDetailsController.swift */; };
 		54FB739F26D68ADF007D0FC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54FB739E26D68ADF007D0FC7 /* Images.xcassets */; };
 		54FB73A226D68ADF007D0FC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FB73A026D68ADF007D0FC7 /* LaunchScreen.storyboard */; };
 		54FB73AD26D68AE0007D0FC7 /* RemindMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB73AC26D68AE0007D0FC7 /* RemindMeTests.swift */; };
@@ -63,7 +63,7 @@
 		54FB739226D68ADD007D0FC7 /* RemindMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FB739526D68ADD007D0FC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FB739726D68ADD007D0FC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		54FB739926D68ADD007D0FC7 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		54FB739926D68ADD007D0FC7 /* NotificationDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailsController.swift; sourceTree = "<group>"; };
 		54FB739E26D68ADF007D0FC7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		54FB73A126D68ADF007D0FC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54FB73A326D68ADF007D0FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -214,7 +214,7 @@
 		99812A002BA309EF00938B85 /* Notification */ = {
 			isa = PBXGroup;
 			children = (
-				54FB739926D68ADD007D0FC7 /* NotificationController.swift */,
+				54FB739926D68ADD007D0FC7 /* NotificationDetailsController.swift */,
 				99812A012BA3121C00938B85 /* NotificationManager.swift */,
 				99BC3E6D2C31C0ED00D1D9E4 /* NotificationListViewController.swift */,
 				99BC3E702C31C20B00D1D9E4 /* NotificationCell.swift */,
@@ -365,7 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99BC3E6E2C31C0ED00D1D9E4 /* NotificationListViewController.swift in Sources */,
-				54FB739A26D68ADD007D0FC7 /* NotificationController.swift in Sources */,
+				54FB739A26D68ADD007D0FC7 /* NotificationDetailsController.swift in Sources */,
 				54FB739626D68ADD007D0FC7 /* AppDelegate.swift in Sources */,
 				99812A022BA3121C00938B85 /* NotificationManager.swift in Sources */,
 				99BC3E712C31C20B00D1D9E4 /* NotificationCell.swift in Sources */,

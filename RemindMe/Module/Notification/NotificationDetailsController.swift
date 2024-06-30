@@ -1,5 +1,5 @@
 //
-//  NotificationController.swift
+//  NotificationDetailsController.swift
 //  RemindMe
 //
 //  Created by Anbalagan D on 25/08/21.
@@ -8,7 +8,7 @@
 import UIKit
 import UserNotifications
 
-final class NotificationController: UIViewController {
+final class NotificationDetailsController: UIViewController {
     private var generateNotificationButton: UIButton!
     // Localized String in Notification
     // class func localizedUserNotificationString(forKey key: String, arguments: [Any]?) -> String

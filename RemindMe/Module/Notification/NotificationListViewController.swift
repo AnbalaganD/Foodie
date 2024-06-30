@@ -13,21 +13,14 @@ final class NotificationListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupNavigationBar()
         setupView()
         registerCells()
         setupSource()
     }
     
-    private func registerCells() {
-        notificationTableView.register(
-            NotificationCell.self,
-            forCellReuseIdentifier: NotificationCell.cellIdentifier
-        )
-    }
-    
-    private func setupSource() {
-        notificationTableView.delegate = self
-        notificationTableView.dataSource = self
+    @objc private func showFilterOption() {
+        print(#function)
     }
 }
 
@@ -47,6 +40,29 @@ private extension NotificationListViewController {
         notificationTableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         notificationTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
+    
+    func registerCells() {
+        notificationTableView.register(
+            NotificationCell.self,
+            forCellReuseIdentifier: NotificationCell.cellIdentifier
+        )
+    }
+    
+    func setupSource() {
+        notificationTableView.delegate = self
+        notificationTableView.dataSource = self
+    }
+    
+    func setupNavigationBar() {
+        navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(
+                image: UIImage(systemName: "line.3.horizontal.decrease"),
+                style: .plain,
+                target: self,
+                action: #selector(showFilterOption)
+            )
+        ]
+    }
 }
 
 extension NotificationListViewController: UITableViewDataSource, UITableViewDelegate {
@@ -62,5 +78,12 @@ extension NotificationListViewController: UITableViewDataSource, UITableViewDele
         
         cell.setupData()
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(
+            NotificationDetailsController(),
+            animated: true
+        )
     }
 }
