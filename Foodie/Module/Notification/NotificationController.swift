@@ -76,9 +76,7 @@ final class NotificationController: UIViewController {
         notificationContent.badge = 1
         notificationContent.sound = UNNotificationSound(named: UNNotificationSoundName("cucko.wav"))
         notificationContent.categoryIdentifier = "user_action_category"
-        if #available(iOS 15.0, *) {
-            notificationContent.interruptionLevel = .timeSensitive
-        }
+        notificationContent.interruptionLevel = .timeSensitive
 
         let isFavorite = Bool.random()
         notificationContent.threadIdentifier = isFavorite ? "Favorite food" : "Recently order"
