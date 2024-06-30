@@ -21,6 +21,7 @@
 		99BC3E6E2C31C0ED00D1D9E4 /* NotificationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BC3E6D2C31C0ED00D1D9E4 /* NotificationListViewController.swift */; };
 		99BC3E712C31C20B00D1D9E4 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BC3E702C31C20B00D1D9E4 /* NotificationCell.swift */; };
 		99BC3E732C31C46E00D1D9E4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BC3E722C31C46E00D1D9E4 /* Colors.xcassets */; };
+		99BC3E7C2C31E5C400D1D9E4 /* DashLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BC3E7B2C31E5C400D1D9E4 /* DashLineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		99BC3E6D2C31C0ED00D1D9E4 /* NotificationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListViewController.swift; sourceTree = "<group>"; };
 		99BC3E702C31C20B00D1D9E4 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		99BC3E722C31C46E00D1D9E4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		99BC3E7B2C31E5C400D1D9E4 /* DashLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashLineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 		99BC3E742C31D83400D1D9E4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				99BC3E7B2C31E5C400D1D9E4 /* DashLineView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99BC3E7C2C31E5C400D1D9E4 /* DashLineView.swift in Sources */,
 				99BC3E6E2C31C0ED00D1D9E4 /* NotificationListViewController.swift in Sources */,
 				54FB739A26D68ADD007D0FC7 /* NotificationDetailsController.swift in Sources */,
 				54FB739626D68ADD007D0FC7 /* AppDelegate.swift in Sources */,
