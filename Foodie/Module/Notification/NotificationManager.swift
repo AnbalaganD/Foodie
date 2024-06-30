@@ -22,7 +22,7 @@ final class NotificationManager: NSObject, @unchecked Sendable {
         userNotificationCenter.delegate = self
     }
 
-    func requestAuthorization(_ completion: @escaping (Result<Bool, any Error>) -> Void) {
+    func requestAuthorization(_ completion: @escaping @Sendable (Result<Bool, any Error>) -> Void) {
         let authorizationOption: UNAuthorizationOptions = [
             .alert,
             .sound,
