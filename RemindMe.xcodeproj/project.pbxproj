@@ -22,6 +22,7 @@
 		99BC3E712C31C20B00D1D9E4 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BC3E702C31C20B00D1D9E4 /* NotificationCell.swift */; };
 		99BC3E732C31C46E00D1D9E4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BC3E722C31C46E00D1D9E4 /* Colors.xcassets */; };
 		99BC3E7C2C31E5C400D1D9E4 /* DashLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BC3E7B2C31E5C400D1D9E4 /* DashLineView.swift */; };
+		99BC3E7E2C31F4BF00D1D9E4 /* CreateNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BC3E7D2C31F4BF00D1D9E4 /* CreateNotificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		99BC3E702C31C20B00D1D9E4 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		99BC3E722C31C46E00D1D9E4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		99BC3E7B2C31E5C400D1D9E4 /* DashLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashLineView.swift; sourceTree = "<group>"; };
+		99BC3E7D2C31F4BF00D1D9E4 /* CreateNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNotificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 				99812A012BA3121C00938B85 /* NotificationManager.swift */,
 				99BC3E6D2C31C0ED00D1D9E4 /* NotificationListViewController.swift */,
 				99BC3E702C31C20B00D1D9E4 /* NotificationCell.swift */,
+				99BC3E7D2C31F4BF00D1D9E4 /* CreateNotificationViewController.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				99BC3E7C2C31E5C400D1D9E4 /* DashLineView.swift in Sources */,
 				99BC3E6E2C31C0ED00D1D9E4 /* NotificationListViewController.swift in Sources */,
 				54FB739A26D68ADD007D0FC7 /* NotificationDetailsController.swift in Sources */,
+				99BC3E7E2C31F4BF00D1D9E4 /* CreateNotificationViewController.swift in Sources */,
 				54FB739626D68ADD007D0FC7 /* AppDelegate.swift in Sources */,
 				99812A022BA3121C00938B85 /* NotificationManager.swift in Sources */,
 				99BC3E712C31C20B00D1D9E4 /* NotificationCell.swift in Sources */,

@@ -22,6 +22,13 @@ final class NotificationListViewController: UIViewController {
     @objc private func showFilterOption() {
         print(#function)
     }
+    
+    @objc private func createNotification() {
+        present(
+            UINavigationController(rootViewController: CreateNotificationViewController()),
+            animated: true
+        )
+    }
 }
 
 private extension NotificationListViewController {
@@ -55,6 +62,12 @@ private extension NotificationListViewController {
     
     func setupNavigationBar() {
         navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(
+                image: UIImage(systemName: "plus"),
+                style: .plain,
+                target: self,
+                action: #selector(createNotification)
+            ),
             UIBarButtonItem(
                 image: UIImage(systemName: "line.3.horizontal.decrease"),
                 style: .plain,
