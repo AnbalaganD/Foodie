@@ -82,8 +82,6 @@ final class NotificationController: UIViewController {
 
         let isFavorite = Bool.random()
         notificationContent.threadIdentifier = isFavorite ? "Favorite food" : "Recently order"
-        notificationContent.summaryArgument = isFavorite ? "Favorite" : "Recent"
-        notificationContent.summaryArgumentCount = 56
 
         let foodUrl = Bundle.main.url(forResource: "food", withExtension: "jpeg")
         let saltLemon = Bundle.main.url(forResource: "salt_lemon", withExtension: "jpeg")

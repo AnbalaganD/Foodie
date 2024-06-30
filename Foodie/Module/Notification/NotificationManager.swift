@@ -23,7 +23,7 @@ final class NotificationManager: NSObject, @unchecked Sendable {
     }
 
     func requestAuthorization(_ completion: @escaping (Result<Bool, any Error>) -> Void) {
-        var authorizationOption: UNAuthorizationOptions = [
+        let authorizationOption: UNAuthorizationOptions = [
             .alert,
             .sound,
             .badge,
@@ -31,10 +31,6 @@ final class NotificationManager: NSObject, @unchecked Sendable {
             .criticalAlert,
             .providesAppNotificationSettings
         ]
-
-        if #available(iOS 13.0, *) {
-            authorizationOption.insert(.announcement)
-        }
 
         userNotificationCenter.requestAuthorization(options: authorizationOption) { isAuthorized, error in
             let result: Result<Bool, Error> = if let error {
@@ -58,7 +54,7 @@ extension NotificationManager: UNUserNotificationCenterDelegate {
         willPresent notification: UNNotification,
         withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
     ) {
-        completionHandler([.alert, .sound])
+        completionHandler([.list, .banner, .sound])
     }
 
     func userNotificationCenter(
