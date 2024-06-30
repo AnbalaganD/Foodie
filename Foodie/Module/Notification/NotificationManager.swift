@@ -8,7 +8,7 @@
 import Foundation
 import UserNotifications
 
-final class NotificationManager: NSObject {
+final class NotificationManager: NSObject, @unchecked Sendable {
     static let shared = NotificationManager()
 
     private let userNotificationCenter = UNUserNotificationCenter.current()
